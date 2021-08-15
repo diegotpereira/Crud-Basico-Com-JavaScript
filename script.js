@@ -70,7 +70,9 @@ function atualizarRegistro(formDados) {
 function naExclusao(td) {
     if (confirm("Tem certeza de apagar esse registro?")) {
         linha = td.parentElement.parentElement;
-        document.getElementById("empregadoLista").excluirLinha(linha.linhaIndex);
+        document.getElementById("empregadoLista").deleteRow(linha.linhaIndex);
+
+        redefinirFormulario();
     }
 }
 
