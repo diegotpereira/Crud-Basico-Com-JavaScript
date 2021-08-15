@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Crud JavaScrpit</title>
+    </head>
+    <body>
+        <h1><center>JavaScript Crud Exemplo</center></h1>
+        <div class="empregado-form">
+            <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+                <div>
+                    <label>Nome Completo</label>
+                    <label class="validation-error hide" id="nomeCompletoValidacaoError">Este campo é necessário.</label>
+                    <input type="text" name="nomeCompleto" id="nomeCompleto">
+                </div>
+                <div>
+                    <label>E-mail</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div>
+                    <label>Salário</label>
+                    <input type="text" name="salario" id="salario">
+                </div>
+                <div>
+                    <label>Cidade</label>
+                    <input type="text" name="cidade" id="cidade">
+                </div>
+                <div class="form-action-buttons">
+                    <input type="submit" value="Salvar">
+                </div>
+            </form>
+        </div>
+        <div class="empregados-tabela">
+            <table class="lista" id="empregadoLista">
+                <tr>
+                    <th>Nome Completo</th>
+                    <th>Email</th>
+                    <th>Salário</th>
+                    <th>Cidade</th>
+                    <th>Ação</th>
+                </tr>
+            </table>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
